@@ -50,22 +50,27 @@ public class FreshWorksTest {
 
 	@Test(priority = 1)
 	public void freshWorkslogoTest() throws InterruptedException {
-//		boolean flag = false;
+		boolean flag = false;
 //			flag = driver.findElement(By.xpath("//a[@download='SampleCSVFile_2kb.csv']")).isDisplayed();
 		Thread.sleep(10000);
-		driver.get("https://sample-videos.com/csv/Sample-Spreadsheet-10-rows.csv");
+		File folder = new File(System.getProperty("user.dir")+"\\Downloads");
+		File[] listOfFiles = folder.listFiles();
+		//driver.get("https://sample-videos.com/csv/Sample-Spreadsheet-10-rows.csv");
 			//Assert.assertTrue(flag);
 			Thread.sleep(3000);
-			File folder = new File(System.getProperty("user.dir")+"\\Downloads");
-			File[] listOfFiles = folder.listFiles();
+			//File folder = new File(System.getProperty("user.dir")+"\\Downloads");
+			File[] listOfFilesupdated = folder.listFiles();
 
-			for (int i = 0; i < listOfFiles.length; i++) {
-			  if (listOfFiles[i].isFile()) {
-			    System.out.println("File " + listOfFiles[i].getName());
-			  } else if (listOfFiles[i].isDirectory()) {
-			    System.out.println("Directory " + listOfFiles[i].getName());
-			  }
-			}
+//			for (int i = 0; i < listOfFiles.length; i++) {
+//			  if (listOfFiles[i].isFile()) {
+//			    System.out.println("File " + listOfFiles[i].getName());
+//			  } else if (listOfFiles[i].isDirectory()) {
+//			    System.out.println("Directory " + listOfFiles[i].getName());
+//			  }
+//			}
+			if(listOfFiles.length+1==listOfFilesupdated.length)
+				flag=true;
+			Assert.assertTrue(flag);
 	}
 
 	
