@@ -55,7 +55,7 @@ public class FreshWorksTest {
 		Thread.sleep(10000);
 		File folder = new File(System.getProperty("user.dir")+"\\Downloads");
 		File[] listOfFiles = folder.listFiles();
-		//driver.get("https://sample-videos.com/csv/Sample-Spreadsheet-10-rows.csv");
+		driver.get("https://sample-videos.com/csv/Sample-Spreadsheet-10-rows.csv");
 			//Assert.assertTrue(flag);
 			Thread.sleep(3000);
 			//File folder = new File(System.getProperty("user.dir")+"\\Downloads");
