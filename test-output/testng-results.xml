@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="22551" started-at="2023-01-31T04:20:41Z" finished-at="2023-01-31T04:21:04Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="22551" started-at="2023-01-31T04:20:41Z" finished-at="2023-01-31T04:21:04Z">
+      <class name="com.test.azure.FreshWorksTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.azure.FreshWorksTest@91161c7]" name="setup" is-config="true" duration-ms="9237" started-at="2023-01-31T04:20:41Z" finished-at="2023-01-31T04:20:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="freshWorkslogoTest()[pri:1, instance:com.test.azure.FreshWorksTest@91161c7]" name="freshWorkslogoTest" duration-ms="13249" started-at="2023-01-31T04:20:50Z" finished-at="2023-01-31T04:21:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freshWorkslogoTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.azure.FreshWorksTest@91161c7]" name="tearDown" is-config="true" duration-ms="0" started-at="2023-01-31T04:21:04Z" finished-at="2023-01-31T04:21:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.test.azure.FreshWorksTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
